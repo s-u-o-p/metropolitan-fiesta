@@ -5,7 +5,7 @@ import colorama
 ISONLINE = online.is_connected()
 def cryptoinsult(nam, insul):
     while insul != 0:
-        print(colorama.Fore.RED f'{nam} {choice(Funny1)} {choice(Funny2)} {choice(Funny3)} {choice(Funny4)} {choice(Funny5)}')
+        print(colorama.Fore.RED + f'{nam} {choice(Funny1)} {choice(Funny2)} {choice(Funny3)} {choice(Funny4)} {choice(Funny5)}')
         insul -= 1
 
 
