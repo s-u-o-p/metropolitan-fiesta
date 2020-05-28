@@ -1,0 +1,4 @@
+smelly
+slow
+smart
+not smart

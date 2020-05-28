@@ -1,0 +1,7 @@
+goblin
+cat
+wrestler
+david
+nerd
+not nerd
+human
