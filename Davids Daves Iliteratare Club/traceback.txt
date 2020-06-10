@@ -1,0 +1,27 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 31, in script call
+  File "game/script-ch0.rpy", line 230, in script call
+  File "game/splash.rpy", line 402, in script
+  File "game/splash.rpy", line 402, in <module>
+  File "game/definitions.rpy", line 29, in restore_all_characters
+IOError: [Errno 2] No such file or directory: u'Z:\\home\\david\\.local\\share\\Steam\\steamapps\\common\\Doki Doki Literature Club/characters/monika.chr'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 31, in script call
+  File "game/script-ch0.rpy", line 230, in script call
+  File "game/splash.rpy", line 402, in script
+  File "Z:\home\david\.local\share\Steam\steamapps\common\Doki Doki Literature Club\renpy\ast.py", line 814, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "Z:\home\david\.local\share\Steam\steamapps\common\Doki Doki Literature Club\renpy\python.py", line 1719, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/splash.rpy", line 402, in <module>
+  File "game/definitions.rpy", line 29, in restore_all_characters
+IOError: [Errno 2] No such file or directory: u'Z:\\home\\david\\.local\\share\\Steam\\steamapps\\common\\Doki Doki Literature Club/characters/monika.chr'
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.99.12.4.2187
+Doki Doki Literature Club! 1.1.1

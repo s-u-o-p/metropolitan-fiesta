@@ -1,0 +1,21 @@
+meta:                            # Some meta variables are available
+  META_KEY: META_VALUE
+
+ROOT_MENU_TITLE:
+  - ITEM_DESCRIPTION: COMMAND
+  - ITEM_DESCRIPTION: COMMAND
+  - SUB_MENU_TITLE:              # You can create sub menu if you need.
+    - ITEM_DESCRIPTION: COMMAND
+    - ITEM_DESCRIPTION: COMMAND
+    - SUB_MENU_TITLE:            # More nested menu
+      - ITEM_DESCRIPTION: COMMAND
+      - ITEM_DESCRIPTION: COMMAND
+  - ITEM_DESCRIPTION:            # You can write a list of command lines for one item.
+      - COMMAND1
+      - COMMAND2
+      - COMMAND3
+  - include: INCLUDE_FILE_PATH   # "include" keyword enables to load
+                                 #   another configuration file.
+  - eval: COMMAND                # "eval" keyword will execute command line
+                                 #   and use its output as configuration YAML string.
+ 
