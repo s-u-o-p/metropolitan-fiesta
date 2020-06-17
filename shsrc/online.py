@@ -4,6 +4,7 @@ def is_connected():
     try:
         # connect to the host -- tells us if the host is actually
         # reachable
+        # sucks a dick because python sucks dick
         socket.create_connection(("www.google.com", 80))
         return True
     except OSError:
