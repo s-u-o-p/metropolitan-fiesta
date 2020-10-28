@@ -20,7 +20,7 @@ import org.apache.commons.lang3.ObjectUtils.Null;
 
 public class ModItems {
 
-    public static final Disc AQUAMARINE = new Disc(new FabricItemSettings().group(ItemGroup.MISC).maxCount(32));
+    public static final Item AQUAMARINE = new Item(new FabricItemSettings().group(ItemGroup.MISC).maxCount(64));
     private static Enchantment ADAPTIVE = Registry.register(Registry.ENCHANTMENT, new Identifier("themod", "adaptive"), new Adaptive());
     private static Enchantment BLOAT = Registry.register(Registry.ENCHANTMENT, new Identifier("themod", "bloat"), new Bloat());
     private static Enchantment STRIKING = Registry.register(Registry.ENCHANTMENT, new Identifier("themod", "striking"), new Striking());
