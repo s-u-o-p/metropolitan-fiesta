@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "fuckyou",
+  "version": "${version}",
+  "name": "fuckyou",
+  "description": "fuck you",
+  "authors": [
+    "suop"
+  ],
+  "contact": {
+    "website": "suop.space",
+    "repo": "https://github.com/s-u-o-p/metropolitan-fiesta"
+  },
+  "license": "MIT",
+  "icon": "assets/fuckyou/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "space.suop.fuckyou.client.FuckyouClient"
+    ],
+    "main": [
+      "space.suop.fuckyou.Fuckyou"
+    ]
+  },
+  "mixins": [
+    "fuckyou.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.5+build.213",
+    "fabric": "*",
+    "minecraft": "1.16.3"
+  }
+}
