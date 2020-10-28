@@ -11,6 +11,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.enchantment.DamageEnchantment;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
+import net.minecraft.item.MusicDiscItem;
 
 public class SuperEnchant extends Enchantment {
 
