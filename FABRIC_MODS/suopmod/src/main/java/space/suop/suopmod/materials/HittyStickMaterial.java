@@ -1,6 +1,6 @@
 package space.suop.suopmod.materials;
 
-wimport net.minecraft.item.Items;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -32,7 +32,7 @@ public class HittyStickMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.BLAZE_ROD);
+        return Ingredient.ofItems(Items.DIAMOND);
     }
     
 
