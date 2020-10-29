@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:the_end",
+  "generator": {
+    "type": "minecraft:flat",
+    "seed": 0,
+    "settings": {
+      "biome": "themod:the_fat_nothing",
+      "lakes": false,
+      "features": true,
+      "layers": [
+        {
+          "block": "minecraft:air",
+          "height": 1
+        }
+      ],
+      "structures": {
+        "stronghold": {
+          "distance": 1000,
+          "spread": 1000,
+          "count": 8
+        },
+        "structures": {
+          "minecraft:desert_pyramid": {
+            "spacing": 20,
+            "separation": 15,
+            "salt": 0
+          },
+          "minecraft:endcity": {
+            "spacing": 20,
+            "separation": 15,
+            "salt": 0
+          },
+          "minecraft:village": {
+            "spacing": 20,
+            "separation": 15,
+            "salt": 0
+          },
+          "minecraft:pillager_outpost": {
+            "spacing": 20,
+            "separation": 15,
+            "salt": 0
+          },
+          "minecraft:ruined_portal": {
+            "spacing": 20,
+            "separation": 15,
+            "salt": 0
+          },
+          "minecraft:igloo": {
+            "spacing": 20,
+            "separation": 15,
+            "salt": 0
+          },
+          "minecraft:fortress": {
+            "spacing": 20,
+            "separation": 15,
+            "salt": 0
+          },
+          "minecraft:jungle_pyramid": {
+            "spacing": 20,
+            "separation": 15,
+            "salt": 0
+          }
+        }
+      }
+    }
+  }
+}

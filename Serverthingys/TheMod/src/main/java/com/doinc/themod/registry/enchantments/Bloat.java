@@ -13,6 +13,7 @@ import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
+import net.fabricmc.fabric.impl.item.FabricItemInternals;
 
 import com.doinc.themod.customclass.SuperEnchant;
 import com.doinc.themod.registry.enchantments.Adaptive;

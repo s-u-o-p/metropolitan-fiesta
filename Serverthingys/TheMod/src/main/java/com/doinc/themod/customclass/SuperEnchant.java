@@ -42,7 +42,7 @@ public class SuperEnchant extends Enchantment {
     @Override
     public Text getName(int level) {
         MutableText mutableText = new TranslatableText(this.getTranslationKey());
-        mutableText.formatted(Formatting.STRIKETHROUGH, Formatting.YELLOW);
+        mutableText.formatted(Formatting.UNDERLINE, Formatting.YELLOW);
         if (level != 1 || this.getMaxLevel() != 1) {
            mutableText.append(" ").append((Text)(new TranslatableText("enchantment.level." + level)));
         }
