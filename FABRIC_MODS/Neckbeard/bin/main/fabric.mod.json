@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "neckbeard",
+  "version": "${version}",
+  "name": "Neckbeard",
+  "description": "N E C K B E A R D",
+  "authors": [
+    "suop",
+    "dave",
+    "not_you_twat"
+  ],
+  "contact": {
+    "website": "space.suop",
+    "repo": "https://github.com/s-u-o-p/metropolitan-fiesta.git"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/neckbeard/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "space.suop.neckbeard.client.NeckbeardClient"
+    ],
+    "main": [
+      "space.suop.neckbeard.Neckbeard"
+    ]
+  },
+  "mixins": [
+    "neckbeard.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.6+build.214",
+    "fabric": "*",
+    "minecraft": "1.16.3"
+  }
+}
