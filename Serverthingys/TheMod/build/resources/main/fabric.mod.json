@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "themod",
+  "version": "1.0.0",
+
+  "name": "THE mod",
+  "description": "Java still fucking sucks",
+  "authors": [
+    "Me <- :sunglasses:"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/themod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.doinc.themod.Themod"
+    ]
+  },
+  "mixins": [
+    "themod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

@@ -1,0 +1,26 @@
+com/doinc/themod/Themod.java
+ com.doinc.themod.Themod
+com/doinc/themod/discs/Tdisc.java
+ com.doinc.themod.discs.Tdisc
+com/doinc/themod/registry/enchantments/Adaptive.java
+ com.doinc.themod.registry.enchantments.Adaptive
+com/doinc/themod/dim/heightchecker.java
+ com.doinc.themod.dim.heightchecker
+com/doinc/themod/discs/Songs.java
+ com.doinc.themod.discs.Songs
+com/doinc/themod/loot/fishingtable.java
+ com.doinc.themod.loot.fishingtable
+com/doinc/themod/mixin/StupidMixin.java
+ com.doinc.themod.mixin.StupidMixin
+com/doinc/themod/registry/enchantments/Striking.java
+ com.doinc.themod.registry.enchantments.Striking
+com/doinc/themod/registry/ModItems.java
+ com.doinc.themod.registry.ModItems
+com/doinc/themod/dim/Thefatnothing.java
+ com.doinc.themod.dim.Thefatnothing
+com/doinc/themod/customclass/IgneousSponge.java
+ com.doinc.themod.customclass.IgneousSponge
+com/doinc/themod/customclass/SuperEnchant.java
+ com.doinc.themod.customclass.SuperEnchant
+com/doinc/themod/registry/enchantments/Bloat.java
+ com.doinc.themod.registry.enchantments.Bloat

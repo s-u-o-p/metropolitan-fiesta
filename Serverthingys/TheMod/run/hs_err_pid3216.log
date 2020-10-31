@@ -1,0 +1,23 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fdb8b3c7b79, pid=3216, tid=3218
+#
+# JRE version: OpenJDK Runtime Environment (11.0.8+10) (build 11.0.8+10)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.8+10, mixed mode, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [radeonsi_dri.so+0xb04b79]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h" (or dumping to /home/david/Documents/GitHub/metropolitan-fiesta/Serverthingys/TheMod/run/core.3216)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=localhost:37387,server=n,suspend=y -Dfabric.dli.config=/home/david/Documents/GitHub/metropolitan-fiesta/Serverthingys/TheMod/.gradle/loom-cache/launch.cfg -Dfabric.dli.env=client -Dfabric.dli.main=net.fabricmc.loader.launch.knot.KnotClient -Dfile.encoding=UTF-8 net.fabricmc.devlaunchinjector.Main
+
+Host: 

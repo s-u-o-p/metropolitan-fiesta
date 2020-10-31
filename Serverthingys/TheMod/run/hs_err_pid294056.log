@@ -1,0 +1,177 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fc99b3ba144, pid=294056, tid=294058
+#
+# JRE version: OpenJDK Runtime Environment (11.0.8+10) (build 11.0.8+10)
+# Java VM: OpenJDK 64-Bit Server VM (11.0.8+10, mixed mode, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [radeonsi_dri.so+0xaf7144]
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h" (or dumping to /home/david/Documents/GitHub/metropolitan-fiesta/Serverthingys/TheMod/run/core.294056)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=localhost:33751,server=n,suspend=y -Dfabric.dli.config=/home/david/Documents/GitHub/metropolitan-fiesta/Serverthingys/TheMod/.gradle/loom-cache/launch.cfg -Dfabric.dli.env=client -Dfabric.dli.main=net.fabricmc.loader.launch.knot.KnotClient -Dfile.encoding=UTF-8 net.fabricmc.devlaunchinjector.Main
+
+Host: AMD Ryzen 3 2300U with Radeon Vega Mobile Gfx, 4 cores, 6G, Arch Linux
+Time: Mon Oct 26 20:08:16 2020 AEDT elapsed time: 1511 seconds (0d 0h 25m 11s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fca3001b000):  JavaThread "Render thread" [_thread_in_native, id=294058, stack(0x00007fca36aa3000,0x00007fca36ba4000)]
+
+Stack: [0x00007fca36aa3000,0x00007fca36ba4000],  sp=0x00007fca36ba18b0,  free space=1018k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [radeonsi_dri.so+0xaf7144]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 8689  org.lwjgl.system.JNI.invokePV(JJ)V (0 bytes) @ 0x00007fca20961985 [0x00007fca209618e0+0x00000000000000a5]
+J 26707 c2 net.minecraft.client.util.Window.swapBuffers()V (35 bytes) @ 0x00007fca214fddd0 [0x00007fca214fd920+0x00000000000004b0]
+J 27881 c2 net.minecraft.client.MinecraftClient.render(Z)V (946 bytes) @ 0x00007fca2160470c [0x00007fca21602ea0+0x000000000000186c]
+J 28657% c1 net.minecraft.client.MinecraftClient.run()V (223 bytes) @ 0x00007fca18f6fc24 [0x00007fca18f6f620+0x0000000000000604]
+j  net.minecraft.client.main.Main.main([Ljava/lang/String;)V+1366
+v  ~StubRoutines::call_stub
+j  jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+0 java.base@11.0.8
+j  jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+100 java.base@11.0.8
+j  jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+6 java.base@11.0.8
+j  java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+59 java.base@11.0.8
+j  net.fabricmc.loader.game.MinecraftGameProvider.launch(Ljava/lang/ClassLoader;)V+71
+j  net.fabricmc.loader.launch.knot.Knot.init([Ljava/lang/String;)V+692
+j  net.fabricmc.loader.launch.knot.KnotClient.main([Ljava/lang/String;)V+33
+j  java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(Ljava/lang/Object;Ljava/lang/Object;)V+10 java.base@11.0.8
+j  java.lang.invoke.LambdaForm$MH.invokeExact_MT(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V+19 java.base@11.0.8
+j  net.fabricmc.devlaunchinjector.Main.main([Ljava/lang/String;)V+307
+v  ~StubRoutines::call_stub
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 128 (SI_KERNEL), si_addr: 0x0000000000000000
+
+Register to memory mapping:
+
+RAX=0x000000000000000c is an unknown value
+RBX=0x00007fca31f32f40 points into unknown readable memory: 1e ab a1 5c 03 00 0c 00
+RCX=0x00007fca31f32f50 points into unknown readable memory: c0 f5 54 33 ca 7f 00 00
+RDX=0x0 is NULL
+RSP=0x00007fca36ba18b0 is pointing into the stack for thread: 0x00007fca3001b000
+RBP=0x00007fca31f32f48 points into unknown readable memory: 00 00 00 00 00 00 00 00
+RSI=0x0 is NULL
+RDI=0x00007fca3354f5c0 points into unknown readable memory: 71 02 00 00 00 00 04 00
+R8 =0x00007fca36ba19c0 is pointing into the stack for thread: 0x00007fca3001b000
+R9 =0x0000000012bb8b8c is an unknown value
+R10=0x00007fc9a5db98c0: JavaCritical_org_lwjgl_system_JNI_invokePV__JJ+0x0000000000000000 in /home/david/.gradle/caches/fabric-loom/natives/1.16.3/liblwjgl.so at 0x00007fc9a5d75000
+R11=0x0000000000000202 is an unknown value
+R12=0x0000000000000007 is an unknown value
+R13=0x00007fca31f35460 points into unknown readable memory: 1e ab a1 5c 03 00 0c 00
+R14=0x00007fc99bd2c8c0: <offset 0x00000000014698c0> in /usr/lib/dri/radeonsi_dri.so at 0x00007fc99a8c3000
+R15=0x00007fca3354f5c0 points into unknown readable memory: 71 02 00 00 00 00 04 00
+
+
+Registers:
+RAX=0x000000000000000c, RBX=0x00007fca31f32f40, RCX=0x00007fca31f32f50, RDX=0x0000000000000000
+RSP=0x00007fca36ba18b0, RBP=0x00007fca31f32f48, RSI=0x0000000000000000, RDI=0x00007fca3354f5c0
+R8 =0x00007fca36ba19c0, R9 =0x0000000012bb8b8c, R10=0x00007fc9a5db98c0, R11=0x0000000000000202
+R12=0x0000000000000007, R13=0x00007fca31f35460, R14=0x00007fc99bd2c8c0, R15=0x00007fca3354f5c0
+RIP=0x00007fc99b3ba144, EFLAGS=0x0000000000010202, CSGSFS=0x002b000000000033, ERR=0x0000000000000000
+  TRAPNO=0x000000000000000d
+
+Top of Stack: (sp=0x00007fca36ba18b0)
+0x00007fca36ba18b0:   0000000000000001 00007fca31f32f40
+0x00007fca36ba18c0:   00007fca31f1d8b0 00007fc99b6faabf
+0x00007fca36ba18d0:   0000000000000000 00007fca318fca70
+0x00007fca36ba18e0:   00007fca31f1d8b0 0000000000000001 
+
+Instructions: (pc=0x00007fc99b3ba144)
+0x00007fc99b3ba044:   75 18 58 5a 48 85 f6 74 27 f0 83 2e 01 75 21 0f
+0x00007fc99b3ba054:   1f 44 00 00 48 8b 5e 20 48 8b 46 28 48 89 c7 ff
+0x00007fc99b3ba064:   90 c8 00 00 00 48 85 db 74 06 f0 83 2b 01 74 14
+0x00007fc99b3ba074:   48 c7 45 18 00 00 00 00 48 83 c4 08 5b 5d c3 0f
+0x00007fc99b3ba084:   1f 44 00 00 48 89 de eb cb 0f 1f 00 41 54 49 89
+0x00007fc99b3ba094:   f4 55 53 ff 97 f0 01 00 00 41 0f b6 44 24 07 85
+0x00007fc99b3ba0a4:   c0 74 3c 83 e8 01 49 8d 5c 24 08 49 8d 6c c4 10
+0x00007fc99b3ba0b4:   0f 1f 40 00 48 8b 33 48 85 f6 74 13 f0 83 2e 01
+0x00007fc99b3ba0c4:   75 0d 48 8b 46 10 48 89 c7 ff 90 f0 02 00 00 48
+0x00007fc99b3ba0d4:   c7 03 00 00 00 00 48 83 c3 08 48 39 dd 75 d5 49
+0x00007fc99b3ba0e4:   8b 74 24 48 48 85 f6 74 06 f0 83 2e 01 74 15 49
+0x00007fc99b3ba0f4:   c7 44 24 48 00 00 00 00 5b 5d 41 5c c3 0f 1f 80
+0x00007fc99b3ba104:   00 00 00 00 48 8b 46 10 48 89 c7 ff 90 f0 02 00
+0x00007fc99b3ba114:   00 5b 5d 49 c7 44 24 48 00 00 00 00 41 5c c3 66
+0x00007fc99b3ba124:   66 2e 0f 1f 84 00 00 00 00 00 66 90 55 48 89 f5
+0x00007fc99b3ba134:   48 8d 4e 08 53 48 83 ec 08 0f b6 56 01 0f b6 36
+0x00007fc99b3ba144:   ff 97 e8 01 00 00 48 8b 75 08 48 85 f6 74 29 f0
+0x00007fc99b3ba154:   83 2e 01 75 23 0f 1f 80 00 00 00 00 48 8b 5e 20
+0x00007fc99b3ba164:   48 8b 46 28 48 89 c7 ff 90 c8 00 00 00 48 85 db
+0x00007fc99b3ba174:   74 06 f0 83 2b 01 74 14 48 c7 45 08 00 00 00 00
+0x00007fc99b3ba184:   48 83 c4 08 5b 5d c3 0f 1f 44 00 00 48 89 de eb
+0x00007fc99b3ba194:   cb 66 66 2e 0f 1f 84 00 00 00 00 00 41 54 55 48
+0x00007fc99b3ba1a4:   89 f5 53 44 0f b6 66 02 48 8d 5e 08 0f b6 56 01
+0x00007fc99b3ba1b4:   49 89 d8 0f b6 36 44 89 e1 ff 97 20 02 00 00 45
+0x00007fc99b3ba1c4:   85 e4 74 3b 41 8d 44 24 ff 48 8d 6c c5 10 66 0f
+0x00007fc99b3ba1d4:   1f 44 00 00 48 8b 33 48 85 f6 74 13 f0 83 2e 01
+0x00007fc99b3ba1e4:   75 0d 48 8b 46 10 48 89 c7 ff 90 e0 02 00 00 48
+0x00007fc99b3ba1f4:   c7 03 00 00 00 00 48 83 c3 08 48 39 eb 75 d5 5b
+0x00007fc99b3ba204:   5d 41 5c c3 0f 1f 84 00 00 00 00 00 41 54 55 53
+0x00007fc99b3ba214:   48 89 f3 44 0f b6 66 02 80 7b 03 00 0f b6 56 01
+0x00007fc99b3ba224:   48 8b 87 48 02 00 00 0f b6 36 75 78 48 8d 6b 08
+0x00007fc99b3ba234:   44 89 e1 49 89 e8 ff d0 45 85 e4 74 30 41 8d 44 
+
+
+Stack slot to memory mapping:
+stack at sp + 0 slots: 0x0000000000000001 is an unknown value
+stack at sp + 1 slots: 0x00007fca31f32f40 points into unknown readable memory: 1e ab a1 5c 03 00 0c 00
+stack at sp + 2 slots: 0x00007fca31f1d8b0 points into unknown readable memory: 70 e9 d3 31 ca 7f 00 00
+stack at sp + 3 slots: 0x00007fc99b6faabf: <offset 0x0000000000e37abf> in /usr/lib/dri/radeonsi_dri.so at 0x00007fc99a8c3000
+stack at sp + 4 slots: 0x0 is NULL
+stack at sp + 5 slots: 0x00007fca318fca70 points into unknown readable memory: 30 b6 d3 31 ca 7f 00 00
+stack at sp + 6 slots: 0x00007fca31f1d8b0 points into unknown readable memory: 70 e9 d3 31 ca 7f 00 00
+stack at sp + 7 slots: 0x0000000000000001 is an unknown value
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007fc9d00a2150, length=24, elements={
+0x00007fca3001b000, 0x00007fca30136800, 0x00007fca3013b000, 0x00007fca3014f800,
+0x00007fca30151800, 0x00007fca30154000, 0x00007fca30156000, 0x00007fca30215000,
+0x00007fca30218800, 0x00007fca3021a000, 0x00007fca3022f800, 0x00007fca316b4000,
+0x00007fca31b51800, 0x00007fca31470800, 0x00007fca32197800, 0x00007fca3209e800,
+0x00007fca3310a800, 0x00007fca330f5800, 0x00007fc98424e000, 0x00007fca33034800,
+0x00007fca330e7800, 0x00007fca32816000, 0x00007fc9b0027000, 0x00007fc954001000
+}
+
+Java Threads: ( => current thread )
+=>0x00007fca3001b000 JavaThread "Render thread" [_thread_in_native, id=294058, stack(0x00007fca36aa3000,0x00007fca36ba4000)]
+  0x00007fca30136800 JavaThread "Reference Handler" daemon [_thread_blocked, id=294065, stack(0x00007fca3454b000,0x00007fca3464c000)]
+  0x00007fca3013b000 JavaThread "Finalizer" daemon [_thread_blocked, id=294066, stack(0x00007fca3444a000,0x00007fca3454b000)]
+  0x00007fca3014f800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=294067, stack(0x00007fca34062000,0x00007fca34163000)]
+  0x00007fca30151800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=294068, stack(0x00007fca18801000,0x00007fca18902000)]
+  0x00007fca30154000 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=294069, stack(0x00007fca18700000,0x00007fca18801000)]
+  0x00007fca30156000 JavaThread "Sweeper thread" daemon [_thread_blocked, id=294070, stack(0x00007fca185ff000,0x00007fca18700000)]
+  0x00007fca30215000 JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_in_native, id=294072, stack(0x00007fca184fe000,0x00007fca185ff000)]
+  0x00007fca30218800 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=294073, stack(0x00007fca183fd000,0x00007fca184fe000)]
+  0x00007fca3021a000 JavaThread "Service Thread" daemon [_thread_blocked, id=294081, stack(0x00007fca181fb000,0x00007fca182fc000)]
+  0x00007fca3022f800 JavaThread "Common-Cleaner" daemon [_thread_blocked, id=294083, stack(0x00007fca1088f000,0x00007fca10990000)]
+  0x00007fca316b4000 JavaThread "Worker-Bootstrap-3" daemon [_thread_blocked, id=294354, stack(0x00007fca080f4000,0x00007fca081f5000)]
+  0x00007fca31b51800 JavaThread "Timer hack thread" daemon [_thread_blocked, id=294441, stack(0x00007fc9a74ff000,0x00007fc9a7600000)]
+  0x00007fca31470800 JavaThread "Snooper Timer" daemon [_thread_blocked, id=294461, stack(0x00007fc9a61fc000,0x00007fc9a62fd000)]
+  0x00007fca32197800 JavaThread "Narrator" daemon [_thread_blocked, id=294586, stack(0x00007fc9980aa000,0x00007fc9981ab000)]
+  0x00007fca3209e800 JavaThread "Worker-Main-5" daemon [_thread_blocked, id=294589, stack(0x00007fc983a7e000,0x00007fc983b7f000)]
+  0x00007fca3310a800 JavaThread "Snooper Timer" daemon [_thread_blocked, id=294804, stack(0x00007fca09769000,0x00007fca0986a000)]
+  0x00007fca330f5800 JavaThread "Server thread" [_thread_in_vm, id=294805, stack(0x00007fc962f09000,0x00007fc96300a000)]
+  0x00007fc98424e000 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=295073, stack(0x00007fc962606000,0x00007fc962707000)]
+  0x00007fca33034800 JavaThread "ObjectCleanerThread" daemon [_thread_blocked, id=295074, stack(0x00007fc9614eb000,0x00007fc9615ec000)]
+  0x00007fca330e7800 JavaThread "Netty Server IO #0" daemon [_thread_in_native, id=295075, stack(0x00007fc961bde000,0x00007fc961cdf000)]
+  0x00007fca32816000 JavaThread "Netty Local Client IO #0" daemon [_thread_blocked, id=295097, stack(0x00007fc962004000,0x00007fc962105000)]
+  0x00007fc9b0027000 JavaThread "Netty Server IO #1" daemon [_thread_in_native, id=295098, stack(0x00007fc961f03000,0x00007fc962004000)]
+  0x00007fc954001000 JavaThread "Sound engine" daemon [_thread_blocked, id=295381, stack(0x00007fc962105000,0x00007fc962206000)]
+
+Other Threads:
+  0x00007fca3012e800 VMThread "VM Thread" [stack: 0x00007fca3464e000,0x00007fca3474e000] [id=294064]
+  0x00007fca3021c800 WatcherThread [stack: 0x00007fca180fb000,0x00007fca181fb000] [id=294082]
+  0x00007fca30032800 GCTaskThread "GC Thread#0" [stack: 0x00007fca36715000,0x00007fca36815000] [id=294059]
+  0x00007fc9fc001000

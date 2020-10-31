@@ -1,0 +1,5 @@
+Args: "--inJar", "/home/david/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.16.3-34.1.33/forge-1.16.3-34.1.33-injected.jar", "--outJar", "/home/david/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.16.3-34.1.33_mapped_stable_60-1.15/forge-1.16.3-34.1.33_mapped_stable_60-1.15.jar", "--logFile", "accesstransform.log", "--atFile", "/home/david/Documents/GitHub/metropolitan-fiesta/Serverthingys/Themodf/build/_atJar_5/parent_at.cfg"
+Classpath: /home/david/.gradle/caches/forge_gradle/maven_downloader/net/minecraftforge/accesstransformers/1.0.5/accesstransformers-1.0.5-fatjar.jar
+WorkDir: /home/david/Documents/GitHub/metropolitan-fiesta/Serverthingys/Themodf/build/_atJar_5
+Main: net.minecraftforge.accesstransformer.TransformerProcessor
+====================================

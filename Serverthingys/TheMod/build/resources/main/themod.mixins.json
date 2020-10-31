@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.doinc.themod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "StupidMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

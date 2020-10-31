@@ -1,0 +1,4 @@
+com/doinc/hyshitest/Hyshitest.class
+com/doinc/hyshitest/Events/Telebow.class
+com/doinc/hyshitest/Commands/Give.class
+com/doinc/hyshitest/Items/ItemManager.class

@@ -1,0 +1,10 @@
+[14:54:59] [main/INFO]: Fabric is preparing JARs on first launch, this may take a few seconds...
+[14:55:16] [main/INFO]: [FabricLoader] Loading 2 mods: minecraft@1.16.3, fabricloader@0.10.2+build.210
+[14:55:16] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/home/david/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.8.2+build.23/155da5ddecdea6ce15891e2973cb9f65ac0d7d10/sponge-mixin-0.8.2+build.23.jar Service=Knot/Fabric Env=CLIENT
+[14:55:29] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', name='PROD'
+[14:55:29] [main/INFO]: Setting user: Player916
+[14:55:29] [main/INFO]: [STDERR]: [LWJGL] Failed to load a library. Possible solutions:
+	a) Add the directory that contains the shared library to -Djava.library.path or -Dorg.lwjgl.librarypath.
+	b) Add the JAR that contains the shared library to the classpath.
+[14:55:29] [main/INFO]: [STDERR]: [LWJGL] Enable debug mode with -Dorg.lwjgl.util.Debug=true for better diagnostics.
+[14:55:29] [main/INFO]: [STDERR]: [LWJGL] Enable the SharedLibraryLoader debug mode with -Dorg.lwjgl.util.DebugLoader=true for better diagnostics.
